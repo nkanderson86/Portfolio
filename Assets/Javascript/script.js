@@ -1,3 +1,5 @@
+// Array of project objects to build cards from.  This will allow me to easily add/remove stuff without restyling each card.
+
 let projectsArr = [
     {
         name: "In or Out?",
@@ -19,12 +21,14 @@ let projectsArr = [
         description: "Have fun hitting the GIPHY API to search for anything you can think of!"
     }]
 
+// function to dynamically build cards for the page based off what is in the array above
+
 function buildCards() {
     $(".cards").empty();
     for (let i = 0; i < projectsArr.length; i++) {
         let cardBlock = $("<div>").addClass("card-block")
         let projectName = $("<h4>").text(projectsArr[i].name).addClass("card-title p-2");
-        let imageDiv = $("<div>").addClass("card m-2 p-1 col-md-3")
+        let imageDiv = $("<div>").addClass("card m-2 p-1 col-md-3").attr("style", "background-color:  #3CC47C;")
         let projectImg = $("<img>").attr("src", projectsArr[i].imageSrc).attr("style", 'width:100%;height:auto;overflow:auto;').addClass("card-top-img");
         let description = $("<p>").addClass("description").text(projectsArr[i].description)
         let repoLink = $("<a>").attr("href", projectsArr[i].git).text("Check out the code!")
