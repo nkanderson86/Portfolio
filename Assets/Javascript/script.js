@@ -4,19 +4,19 @@ let projectsArr = [
         imageSrc: "Assets/Images/inOrOut.png",
         link: "https://willcoe.github.io/Project1/",
         git: "https://github.com/WillCoe/Project1",
-        description: ""
+        description: "First team project, focused on solving the problem of what to eat and where to eat it.  Our team used two different APIs (Edamam & Yelp) to retreive and display results based on user's input"
     }, {
         name: "Trivia Game",
         imageSrc: "Assets/Images/trivia.jpeg",
         link: "https://nkanderson86.github.io/Trivia-Game/",
         git: "https://github.com/nkanderson86/Trivia-Game",
-        description: ""
+        description: "Trivia game with built in timers."
     }, {
         name: "GIF-tastic",
         imageSrc: "Assets/Images/jiggy.gif",
         link: "https://nkanderson86.github.io/GIF-tastic/",
         git: "https://github.com/nkanderson86/GIF-tastic",
-        description: "",
+        description: "Have fun hitting the GIPHY API to search for anything you can think of!"
     }]
 
 function buildCards() {
@@ -26,19 +26,19 @@ function buildCards() {
         let projectName = $("<h4>").text(projectsArr[i].name).addClass("card-title p-2");
         let imageDiv = $("<div>").addClass("card m-2 p-1 col-md-3")
         let projectImg = $("<img>").attr("src", projectsArr[i].imageSrc).attr("style", 'width:100%;height:auto;overflow:auto;').addClass("card-top-img");
+        let description = $("<p>").addClass("description").text(projectsArr[i].description)
 
-        imageDiv.append(projectImg).append(cardBlock).append(projectName)
+        imageDiv.append(projectImg).append(cardBlock).append(projectName).append(description)
 
-        $(".cards").append(imageDiv);
+        $(".cards").append(imageDiv).hide();
 
         console.log("working");
     }
-
 }
 
 // set up about button to show my profile picture and about me section 
 $("#about").on("click", function () {
-    $(".cards").hide(1000);
+    $(".cards").hide();
     $(".profile").show();
     $(".about-me").show();
 });
@@ -48,9 +48,13 @@ $("#portfolio").on("click", function () {
     $(".profile").hide(1000);
     $(".about-me").hide(1000);
     buildCards();
-    $(".cards").show(1500);
+    $(".cards").show(2000);
 
 });
 
 // set up contact button to bring up a modal with my information and links in it to LinkedIn, GitHub, resume PDF
+
+$("#contact").on("click", function () {
+    $(".modal").modal("show")
+})
 
