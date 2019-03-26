@@ -10,7 +10,7 @@ let projectsArr = [
         imageSrc: "Assets/Images/trivia.jpeg",
         link: "https://nkanderson86.github.io/Trivia-Game/",
         git: "https://github.com/nkanderson86/Trivia-Game",
-        description: "Trivia game with built in timers."
+        description: "Test your knowledge with this hip hop trivia game.  Where will you stack up?  Are you an OG or a pretender?  "
     }, {
         name: "GIF-tastic",
         imageSrc: "Assets/Images/jiggy.gif",
@@ -27,8 +27,10 @@ function buildCards() {
         let imageDiv = $("<div>").addClass("card m-2 p-1 col-md-3")
         let projectImg = $("<img>").attr("src", projectsArr[i].imageSrc).attr("style", 'width:100%;height:auto;overflow:auto;').addClass("card-top-img");
         let description = $("<p>").addClass("description").text(projectsArr[i].description)
+        let repoLink = $("<a>").attr("href", projectsArr[i].git).text("Check out the code!")
+        let liveLink = $("<a>").attr("href", projectsArr[i].link).text("Check out the website!")
 
-        imageDiv.append(projectImg).append(cardBlock).append(projectName).append(description)
+        imageDiv.append(projectImg).append(cardBlock).append(projectName).append(description).append(repoLink).append(liveLink);
 
         $(".cards").append(imageDiv).hide();
 
