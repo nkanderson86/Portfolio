@@ -1,42 +1,45 @@
 body {
-    background-color: rgb(91, 95, 93);
+  background-color: rgb(91, 95, 93);
+}
+.modal-content {
+  font-family: "Oswald", cursive;
+  background-color: rgb(91, 95, 93);
+  color: white;
 }
 
 .background {
-    /* background-image: url('../Images/background1.jpg'); */
-    background-color: rgb(91, 95, 93);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+  /* background-image: url('../Images/background1.jpg'); */
+  background-color: rgb(91, 95, 93);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 #nav-bar {
-    background-color: #1D2731;
-    font-family: 'Sigmar One', cursive;
+  background-color: #1d2731;
+  font-family: "Sigmar One", cursive;
 }
 
 .grid-setup {
-    display: grid;
-    grid-template: 5vw repeat(12, 1fr) 5vw / 3vh repeat(12, 1fr) 3vh;
+  display: grid;
+  grid-template: 5vw repeat(12, 1fr) 5vw / 3vh repeat(12, 1fr) 3vh;
 }
 
-.profile{
-    grid-area: 3/3/12/6;
+.profile {
+  grid-area: 2/3/12/5;
 }
 
-.profile-pic{
-    width:100%;
-    height: auto;
+.profile-pic {
+  width: 100%;
+  height: auto;
 }
 
-.about-me{
-    grid-area: 3/7/6/12;
-    font-family: 'Oswald', cursive;
-    color:  #1D2731;
+.about-me {
+  grid-area: 2/6/6/12;
+  font-family: "Oswald", cursive;
+  color: #1d2731;
 }
 
 .cards {
-    grid-area: 3/3/13/13;
+  grid-area: 2/2/14/14;
 }
-
-
