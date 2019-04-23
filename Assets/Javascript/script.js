@@ -31,7 +31,7 @@ let projectsArr = [
     link: "https://nkanderson86.github.io/Trivia-Game/",
     git: "https://github.com/nkanderson86/Trivia-Game",
     description:
-      "Test your knowledge with this hip hop trivia game.  Where will you stack up?  Are you an OG or a pretender?  "
+      "Test your knowledge with this hip hop trivia game.  Better move quickly or you'll fall off beat and lose your chance to answer."
   },
   {
     name: "GIF-tastic",
@@ -39,7 +39,7 @@ let projectsArr = [
     link: "https://nkanderson86.github.io/GIF-tastic/",
     git: "https://github.com/nkanderson86/GIF-tastic",
     description:
-      "Have fun hitting the GIPHY API to search for anything you can think of!"
+      "Have fun hitting the GIPHY API to search for anything you can imagine!"
   }
 ];
 
@@ -89,14 +89,14 @@ function buildCards() {
 }
 
 // set up about button to show my profile picture and about me section
-$("#about").on("click", function() {
+$("#about").on("click", function () {
   $(".cards").hide();
   $(".profile").show();
   $(".about-me").show();
 });
 
 // set up my portfolio button to create cards for the project objects I will store in my projectArr variable.  This will also need to hide the about me div
-$("#portfolio").on("click", function() {
+$("#portfolio").on("click", function () {
   $(".profile").hide(250);
   $(".about-me").hide(250);
   buildCards();
@@ -105,6 +105,6 @@ $("#portfolio").on("click", function() {
 
 // set up contact button to bring up a modal with my information and links in it to LinkedIn, GitHub, resume PDF
 
-$("#contact").on("click", function() {
+$("#contact").on("click", function () {
   $(".modal").modal("show");
 });
