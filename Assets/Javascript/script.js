@@ -4,10 +4,25 @@ let projectsArr = [
     {
         name: "In or Out?",
         imageSrc: "Assets/Images/inOrOut.png",
-        link: "https://willcoe.github.io/Project1/",
-        git: "https://github.com/WillCoe/Project1",
+        link: "https://nkanderson86.github.io/Project1/",
+        git: "https://github.com/nkanderson86/Project1",
         description: "First team project, focused on solving the problem of what to eat and where to eat it.  Our team used two different APIs (Edamam & Yelp) to retreive and display results based on user's input"
-    }, {
+    }, 
+    {
+        name: "Elevate",
+        imageSrc: "Assets/Images/Elevated.png",
+        link: "https://elevated-shadow.herokuapp.com/",
+        git: "https://github.com/nkanderson86/elevated",
+        description: "Second team project, focused on helping people find a drink or strain to their liking.  Our team built a full stack project with a backend that stores and authenticates users visitng the site."
+    },
+    {
+        name: "Hangman CLI Style",
+        imageSrc: "Assets/Images/Hangman_CLI.png",
+        link:"https://www.youtube.com/watch?v=di5omJ8HaxE",
+        git: "https://github.com/nkanderson86/Hangman-CLI", 
+        description:" The classic game Hangman brought to you as a command line interface!"
+    },
+    {
         name: "Trivia Game",
         imageSrc: "Assets/Images/trivia.jpeg",
         link: "https://nkanderson86.github.io/Trivia-Game/",
@@ -31,8 +46,8 @@ function buildCards() {
         let imageDiv = $("<div>").addClass("card m-2 p-1 col-md-3").attr("style", "background-color:  #3CC47C;")
         let projectImg = $("<img>").attr("src", projectsArr[i].imageSrc).attr("style", 'width:100%;height:auto;overflow:auto;').addClass("card-top-img");
         let description = $("<p>").addClass("description").text(projectsArr[i].description)
-        let repoLink = $("<a>").attr("href", projectsArr[i].git).text("Check out the code!")
-        let liveLink = $("<a>").attr("href", projectsArr[i].link).text("Check out the website!")
+        let repoLink = $("<a>").attr("href", projectsArr[i].git).attr("target", "_blank").text("Check out the code!")
+        let liveLink = $("<a>").attr("href", projectsArr[i].link).attr("target", "_blank").text("Check out the website!")
 
         imageDiv.append(projectImg).append(cardBlock).append(projectName).append(description).append(repoLink).append(liveLink);
 
@@ -51,10 +66,10 @@ $("#about").on("click", function () {
 
 // set up my portfolio button to create cards for the project objects I will store in my projectArr variable.  This will also need to hide the about me div
 $("#portfolio").on("click", function () {
-    $(".profile").hide(1000);
-    $(".about-me").hide(1000);
+    $(".profile").hide(250);
+    $(".about-me").hide(250);
     buildCards();
-    $(".cards").show(2000);
+    $(".cards").show(500);
 
 });
 
