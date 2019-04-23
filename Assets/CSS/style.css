@@ -26,7 +26,7 @@ body {
 }
 
 .profile {
-  grid-area: 3/3/12/6;
+  grid-area: 2/3/12/5;
 }
 
 .profile-pic {
@@ -35,7 +35,7 @@ body {
 }
 
 .about-me {
-  grid-area: 3/7/6/12;
+  grid-area: 2/6/6/12;
   font-family: "Oswald", cursive;
   color: #1d2731;
 }

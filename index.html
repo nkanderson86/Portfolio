@@ -1,145 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers|Oswald|Sigmar+One"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="Assets/CSS/animate.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="Assets/CSS/style.css" />
-    <title>Nick Anderson</title>
 
-    <div class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald|Sigmar+One" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/CSS/animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+  <title>Nick Anderson</title>
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body justify-content-center">
+          <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal"
+            data-theme="dark" data-vanity="nick-anderson-429b08ab">
+            <a class="LI-simple-link" href="https://www.linkedin.com/in/nick-anderson-429b08ab?trk=profile-badge">Nick
+              Anderson</a>
           </div>
-          <div class="modal-body justify-content-center">
-            <div
-              class="LI-profile-badge"
-              data-version="v1"
-              data-size="large"
-              data-locale="en_US"
-              data-type="horizontal"
-              data-theme="dark"
-              data-vanity="nick-anderson-429b08ab"
-            >
-              <a
-                class="LI-simple-link"
-                href="https://www.linkedin.com/in/nick-anderson-429b08ab?trk=profile-badge"
-                >Nick Anderson</a
-              >
-            </div>
-            <br />
-            <li>
-              GitHub:
-              <a href="https://github.com/nkanderson86" target="_blank"
-                >nkanderson86</a
-              >
-            </li>
-            <li>Email: n.anderson.398@gmail.com</li>
-            <li>Phone: 208-871-9498</li>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+          <br />
+          <li>
+            GitHub:
+            <a href="https://github.com/nkanderson86" target="_blank">nkanderson86</a>
+          </li>
+          <li>Email: n.anderson.398@gmail.com</li>
+          <li>Phone: 208-871-9498</li>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
-  </head>
+  </div>
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg" id="nav-bar">
-      <div class="navbar-brand">
-        <h1 class="text-light" href="#!">Nick Anderson</h1>
-      </div>
-      <div class="navbar-nav">
-        <button
-          class="nav-item btn btn-sm btn-outline-secondary mx-2"
-          id="about"
-        >
-          About
-        </button>
-        <button
-          class="nav-item btn btn-sm btn-outline-secondary mx-2"
-          id="portfolio"
-        >
-          Portfolio
-        </button>
-        <button
-          class="nav-item btn btn-sm btn-outline-secondary mx-2"
-          id="contact"
-        >
-          Contact
-        </button>
-      </div>
-
-      <!-- add links to LinkedIn, Resume, GitHub -->
-    </nav>
-
-    <div class="background">
-      <div class="grid-setup">
-        <div class="profile">
-          <img
-            class="profile-pic animated rotateInDownLeft"
-            src="Assets/Images/profileB.png"
-            alt="NickAnderson"
-          />
-        </div>
-        <div class="about-me animated rotateInUpRight">
-          <h3>About Nick</h3>
-          <p>
-            Born and raised in Boise, Idaho. Web developer with a background in
-            finance and software testing. Currently building a career in the
-            tech sector. Sports junky. Golf obsessed.
-          </p>
-        </div>
-
-        <div class="cards row justify-content-around animated fadeIn"></div>
-      </div>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://platform.linkedin.com/badges/js/profile.js"
-        async
-        defer
-      ></script>
-      <script src="Assets/Javascript/script.js"></script>
+<body>
+  <nav class="navbar navbar-expand-lg" id="nav-bar">
+    <div class="navbar-brand">
+      <h1 class="text-light" href="#!">Nick Anderson</h1>
     </div>
-  </body>
+    <div class="navbar-nav">
+      <button class="nav-item btn btn-sm btn-outline-secondary mx-2" id="about">
+        About
+      </button>
+      <button class="nav-item btn btn-sm btn-outline-secondary mx-2" id="portfolio">
+        Portfolio
+      </button>
+      <button class="nav-item btn btn-sm btn-outline-secondary mx-2" id="contact">
+        Contact
+      </button>
+    </div>
+
+    <!-- add links to LinkedIn, Resume, GitHub -->
+  </nav>
+
+  <div class="background">
+    <div class="grid-setup">
+      <div class="profile">
+        <img class="profile-pic animated rotateInDownLeft" src="Assets/Images/profileB.png" alt="NickAnderson" />
+      </div>
+      <div class="about-me animated rotateInUpRight">
+        <h3>About Nick</h3>
+        <p>
+          Full stack (MERN) web developer with experience in finance and
+          manual software testing prior to stepping into the world of
+          development. Born and raised in Boise, Idaho. Golf junky. Chicago
+          sports enthusiast. Currently residing in Seattle, WA with fiance Allie and furry children Odin
+          (German-Shepard/Husky Mix) and Ophelia (Dilute Calico)
+        </p>
+      </div>
+
+      <div class="cards row justify-content-around animated fadeIn"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="Assets/Javascript/script.js"></script>
+  </div>
+</body>
+
 </html>
