@@ -26,20 +26,20 @@ let projectsArr = [
       " The classic game Hangman brought to you as a command line interface!"
   },
   {
+    name: "ATHF Click Game",
+    imageSrc: "Assets/Images/athf.png",
+    link: "https://nkanderson86.github.io/athf-click-game/",
+    git: "https://github.com/nkanderson86/athf-click-game",
+    description:
+      "Built using React, test your memory by clicking on charachters from the cartoon Aqua Teen Hunger Force.  Just don't click the same one twice!"
+  },
+  {
     name: "Trivia Game",
     imageSrc: "Assets/Images/trivia.jpeg",
     link: "https://nkanderson86.github.io/Trivia-Game/",
     git: "https://github.com/nkanderson86/Trivia-Game",
     description:
       "Test your knowledge with this hip hop trivia game.  Better move quickly or you'll fall off beat and lose your chance to answer."
-  },
-  {
-    name: "GIF-tastic",
-    imageSrc: "Assets/Images/jiggy.gif",
-    link: "https://nkanderson86.github.io/GIF-tastic/",
-    git: "https://github.com/nkanderson86/GIF-tastic",
-    description:
-      "Have fun hitting the GIPHY API to search for anything you can imagine!"
   }
 ];
 
